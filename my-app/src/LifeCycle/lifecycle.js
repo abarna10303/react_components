@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Child from './child';
 export class Lifecycle extends Component {
   constructor()
   {
@@ -7,6 +7,7 @@ export class Lifecycle extends Component {
     this.state=
     {
       names:"Components Update",
+      show:true,
     }
     console.log("constructor");
   }
@@ -27,6 +28,8 @@ export class Lifecycle extends Component {
         <button onClick={()=>this.setState({names:"Modify Components Update"},()=>{
           console.log(this.state.names);
         })}>Update button</button>
+        <button onClick={()=>this.setState({show:!this.state.show})}>DElete</button>
+        {this.state.show?<Child />:null}
       </div>
     )
   }

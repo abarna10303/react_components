@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Classcomponent from './ClassComponents/Classcomponent';
 import Lifecycle from './LifeCycle/lifecycle';
+import Flifecycle from './Function/flifecycle';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -11,6 +12,7 @@ root.render(
   <div>
   <Classcomponent />
   <Lifecycle />
+  <Flifecycle />
   </div>
 );
 
